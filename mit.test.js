@@ -17,12 +17,11 @@ describe('MIT', () => {
         expect(mit.colors).toContain('Silver Gray');    
     });
 
-    test('Founded range', () => {
-        expect(mit.founded).toBeLessThanOrEqual(1875);
-        expect(mit.founded).toBeGreaterThanOrEqual(1850);    
+    test('Founded Date', () => {
+        expect(mit.founded).toMatch('1861');   
     });
 
     test('Motto', () => {
-        expect(mit.motto).toMatch('Mens');
+        expect(mit.motto).toMatch('Mens et Manus');
     });
 });
